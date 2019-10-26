@@ -20,19 +20,23 @@ class BlogsController < ApplicationController
   end
 
   def edit
-    @tweets = Tweet.find(params[:id])
+    @tweet = Tweet.find(params[:id])
   end
 
   def update
-    @tweets = Tweet.find(params[:id])
-    if @tweet.user_id == current_user.id
-      @tweets.update(tweet_params)
+    @tweet = Tweet.find(params[:id])
+    if tweet.user_id == current_user.id
+      Tweet.update(tweets_params)
     end
   end
 
   private
   def tweet_params
     params.require(:tweet).permit(:text)
+  end
+
+  def tweets_params
+    params.permit(:text)
   end
 
   def move_to_index
