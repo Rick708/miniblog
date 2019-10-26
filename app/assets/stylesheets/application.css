@@ -1,0 +1,46 @@
+.main{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.main-set{
+  margin-left: 25%;
+  width: 50%;
+}
+
+.card{
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: #f44336;
+  border-radius: 2px;
+}
+
+.card-hi{
+  padding: 24px;
+}
+
+.card-row{
+  border-top: 1px solid rgba(160,160,160,0.2);
+  position: relative;
+  padding: 16px 24px;
+}
+
+.contents.row{
+  width: 50%;
+  margin-left: 25%;
+}
+
+h6{
+  padding-top: 50px;
+  text-align: center;
+}
+
+textarea{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.li{
+  float: left;
+}

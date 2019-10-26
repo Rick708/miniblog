@@ -1,0 +1,17 @@
+  <div class="main-set">
+<% @tweets.each do |tweet| %>
+  <div class="card">
+    <div class="card-hi">
+    <p><%= simple_format(tweet.text) %></p>
+    </div>
+      <% if user_signed_in?%>
+    <div class="card-row"></div>
+     <li><%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %></li>
+     <li><%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %></li>
+          <% end %>
+    </div>
+     <% end %>
+      <div class="card-row"></div>
+        <%= paginate(@tweets) %>
+    </div>
+  </div>

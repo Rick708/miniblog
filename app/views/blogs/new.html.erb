@@ -1,0 +1,7 @@
+<div class="contents row">
+  <%= form_for [@tweets] do |f| %>
+    <h6>投稿する</h6>
+    <%= f.text_area :text, placeholder: "Text"%>
+    <%= f.submit "SENT" %>
+  <% end %>
+</div>
